@@ -1,4 +1,4 @@
-import { Expenses } from "./components/Expenses";
+import { Expenses } from "./components/Expenses/Expenses";
 
 function App() {
   const expenses = [
@@ -23,6 +23,12 @@ function App() {
     },
   ];
   return (
+    // React.createElement('div', {},
+    // React.createElement('h2',{}, "let's get started"),
+    // React.createElement(expenses,{items:expenses})
+    // );
+    // under the hood replication of the return jsx
+
     <div>
       <h2>Let's get started!</h2>
       <Expenses items={expenses} />
